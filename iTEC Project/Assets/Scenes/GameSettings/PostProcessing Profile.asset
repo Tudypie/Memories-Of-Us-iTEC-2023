@@ -44,7 +44,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 39.6
+    value: 43
   intensityX:
     overrideState: 1
     value: 1
@@ -237,7 +237,7 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: -36
+    value: -48
   tint:
     overrideState: 1
     value: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: 11.7
+    value: -17
   brightness:
     overrideState: 1
     value: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
     value: 0
   contrast:
     overrideState: 1
-    value: 0
+    value: 11
   mixerRedOutRedIn:
     overrideState: 1
     value: 100
@@ -1535,7 +1535,7 @@ MonoBehaviour:
     value: 1
   focusDistance:
     overrideState: 1
-    value: 2.39
+    value: 2.5
   aperture:
     overrideState: 1
     value: 32
@@ -1594,7 +1594,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.196
+    value: 0.301
   smoothness:
     overrideState: 1
     value: 1
