@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6285349267432006156}
   - component: {fileID: 4762088874522398461}
   - component: {fileID: 7056722854852066715}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gramophone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7056722854852066714}
-  m_LocalRotation: {x: -0, y: 0.74779284, z: -0, w: 0.66393214}
+  m_LocalRotation: {x: 0, y: 0.74779236, z: 0, w: 0.66393274}
   m_LocalPosition: {x: 3.0831442, y: 6.2643995, z: -3.5755372}
   m_LocalScale: {x: 0.68179995, y: 0.6818, z: 0.68179995}
   m_ConstrainProportionsScale: 0
@@ -49,10 +49,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e349082b18e9af64b9b47578a1de9655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactKey: 0
+  interactKey: 101
   interactEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6285349267432006156}
+        m_TargetAssemblyTypeName: Gramophone, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6285349267432006156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,9 +78,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: e3ac958d8743de94eab892a757b0947b, type: 3}
+  - {fileID: 8300000, guid: ca66c6188ab647e47b55e662d289aae6, type: 3}
+  - {fileID: 8300000, guid: 3c53c0b17041ba14fa12a58907c21d58, type: 3}
+  - {fileID: 8300000, guid: 1ee9d5cccd4e88e4184b035122f46a34, type: 3}
   currentAudioClip: 0
 --- !u!65 &4762088874522398461
 BoxCollider:

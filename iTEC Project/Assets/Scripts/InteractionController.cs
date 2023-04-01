@@ -16,6 +16,8 @@ public class InteractionController : MonoBehaviour
     public RaycastHit hitInfo;
     public bool hitSomething;
 
+    public bool isHoldingItem = false;
+
     private Camera mainCamera;
 
     private void Start()
@@ -35,8 +37,9 @@ public class InteractionController : MonoBehaviour
 
         hitSomething = Physics.Raycast(ray, out hitInfo, rayDistance, interactableLayer);
 
+
         if(hitSomething)
-        {
+        {   
             OnHitSomething?.Invoke(hitInfo);  
               
             interactImage.SetActive(true); 

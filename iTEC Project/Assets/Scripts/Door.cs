@@ -12,6 +12,10 @@ public class Door : MonoBehaviour
     float iDelay = 1.2f;
     float startIDelay;
 
+    [SerializeField] private AudioSource audioPlayer;
+    [SerializeField] private AudioClip openClip;
+    [SerializeField] private AudioClip closeClip;
+
 
     private void Start()
     {
@@ -36,12 +40,16 @@ public class Door : MonoBehaviour
             anim[anim.clip.name].speed = -1f;
             anim[anim.clip.name].time = anim[anim.clip.name].length;
             anim.Play();
+            
+            audioPlayer.PlayOneShot(openClip);
         }
         else
         {
             anim[anim.clip.name].speed = 1f;
             anim[anim.clip.name].time = 0;
             anim.Play();
+
+            audioPlayer.PlayOneShot(closeClip);
         }
 
         iDelay = startIDelay;
