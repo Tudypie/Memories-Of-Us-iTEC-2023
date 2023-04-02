@@ -29,14 +29,12 @@ public class Slideshow : MonoBehaviour
         if (!Input.GetMouseButtonDown(0))
             return;
 
+        iDelay = startIDelay;
+        
+        images[currentImage].SetActive(false);
         currentImage++;
 
         if(currentImage >= images.Length){
-            for(int i = 0; i < images.Length; i++)
-            {
-                images[i].SetActive(false);
-            }
-
             OnEndSlideshow?.Invoke();
             return;
         }

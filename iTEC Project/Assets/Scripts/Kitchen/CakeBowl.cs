@@ -17,6 +17,7 @@ public class CakeBowl : MonoBehaviour
     public string currentOrder = "";
 
     [SerializeField] private UnityEvent onFinishEvent;
+    [SerializeField] private UnityEvent onFinishPour;
 
     private Interactable interactable;
 
@@ -36,18 +37,23 @@ public class CakeBowl : MonoBehaviour
         if(currentLayer >= layers.Length-1)
         {
             onFinishEvent?.Invoke();
+            Invoke("FinishPour", 2.1f);
         }
             
         interactionController.isHoldingItem = false;
 
-        currentOrder += itemHolder.transform.GetChild(0).gameObject.
-                            GetComponent<ItemPickup>().itemId;
+        currentOrder += itemHolder.transform.GetChild(0).gameObject.GetComponent<ItemPickup>().itemId;
 
         Destroy(itemHolder.transform.GetChild(0).gameObject);
 
         layers[currentLayer].SetActive(true);
 
         currentLayer++;
+    }
+
+    public void FinishPour()
+    {
+        onFinishPour?.Invoke();
     }
 
 }
