@@ -6,10 +6,14 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Interactable))]
 public class Journal : MonoBehaviour
 {
-    [SerializeField] private bool isReading = false;
     [SerializeField] private GameObject journalUI;
     [SerializeField] private GameObject[] pages;
-    [SerializeField] private int currentPage = -1;
+    
+    private int currentPage = -1;
+    private bool isReading = false;
+
+    [SerializeField, Space] private AudioPlayer audioPlayer;
+    [SerializeField] private AudioClip pageTurn;
     
     [SerializeField] private UnityEvent onStopReading;
 
@@ -67,6 +71,8 @@ public class Journal : MonoBehaviour
 
     public void NextPage()
     {   
+        audioPlayer.PlayAudio(pageTurn);
+
         if(currentPage >= 0)
             pages[currentPage].SetActive(false);
 
