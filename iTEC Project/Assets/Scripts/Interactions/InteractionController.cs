@@ -48,6 +48,8 @@ public class InteractionController : MonoBehaviour
         {
             hitInfo = default(RaycastHit);
 
+            OnHitSomething?.Invoke(hitInfo);
+
             interactImage.SetActive(false); 
         }
 
