@@ -9,6 +9,8 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] private InteractionController interactionController;
     private Interactable interactable;
 
+    private bool lerpPos = false;
+
     public string itemId;
 
     private void Start()
@@ -19,6 +21,18 @@ public class ItemPickup : MonoBehaviour
     private void Update()
     {
         interactable.enabled = interactionController.isHoldingItem? false : true;
+
+        if(!lerpPos)
+            return;
+
+        transform.position = Vector3.Lerp(transform.position, itemHolder.position, 0.05f);
+
+        Invoke("StopLerping", 1f);
+    }
+
+    public void StopLerping()
+    {
+        lerpPos = false;
     }
 
     public void Interact()
@@ -27,8 +41,8 @@ public class ItemPickup : MonoBehaviour
             return;
 
         transform.SetParent(itemHolder);
-        transform.position = itemHolder.position;
-
+        lerpPos = true;
+        
         interactionController.isHoldingItem = true;
     }
 }

@@ -6578,7 +6578,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '12 October 1964
 
-    
+
 
     Oh, the music! With him, I can hear it crystal
     clear! He always takes me dancing, wherever we are. His touch makes me feel like
@@ -15898,6 +15898,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1654739474}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1677373193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16672,13 +16684,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: '12 July 1964
 
-    
 
-    Sunflowers...they are my favorite..He''s always
-    very aware of what I love. With him, all my problems are gone. With him, I see
-    beyond the world, and the blossoms of flowers are more intense. All my senses
-    are deeper. Before him, my world was gray. Now he is my only memory and my only
-    hope'
+
+    Sunflowers...they are my favorite..He''s always very
+    aware of what I love. With him, all my problems are gone. With him, I see beyond
+    the world, and the blossoms of flowers are more intense. All my senses are deeper.
+    Before him, my world was gray. Now he is my only memory and my only hope'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 581353d1637255b48aaa97745eec7673, type: 2}
   m_sharedMaterial: {fileID: -3906879480345346005, guid: 581353d1637255b48aaa97745eec7673, type: 2}
@@ -19583,11 +19594,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: '21 August 1964
 
-    
 
-    I love to cook, especially if it''s with him.
-    He''s always trying to trick me, thinking I''ll mistake the order of ingredients.
-    It''s so silly! As if I can''t read or see clearly...'
+
+    I love to cook, especially if it''s with him. He''s
+    always trying to trick me, thinking I''ll mistake the order of ingredients. It''s
+    so silly! As if I can''t read or see clearly...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 581353d1637255b48aaa97745eec7673, type: 2}
   m_sharedMaterial: {fileID: -3906879480345346005, guid: 581353d1637255b48aaa97745eec7673, type: 2}
@@ -20211,6 +20222,10 @@ PrefabInstance:
       propertyPath: itemHolder
       value: 
       objectReference: {fileID: 1059861601}
+    - target: {fileID: 2135422192, guid: 253c2287c602ae74799e8840a4dc1c11, type: 3}
+      propertyPath: addParticles
+      value: 
+      objectReference: {fileID: 6634837012574518667, guid: 2fa8d1f2cb2767d4990b1c5f31aa2129, type: 3}
     - target: {fileID: 2135422192, guid: 253c2287c602ae74799e8840a4dc1c11, type: 3}
       propertyPath: interactionController
       value: 
