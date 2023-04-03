@@ -7,29 +7,24 @@ public class Pills : MonoBehaviour
     [SerializeField] private GameObject[] pills;
     int currentPill = 0;
 
-    private float iDelay = 0.5f;
-    private float startIDelay;
+    private Interactable interactable;
 
     private void Start()
     {
-        startIDelay = iDelay;
+        interactable = GetComponent<Interactable>();
     }
 
     private void Update()
     {
-        if (iDelay > 0)
-            iDelay -= Time.deltaTime;
-
+        if(currentPill >= pills.Length-1)
+        {
+            interactable.enabled = false;
+        }
     }
 
     public void TakePill()
     {   
-        if(iDelay > 0)
-            return;
-
         pills[currentPill].SetActive(false);
         currentPill++;
-
-        iDelay = startIDelay;
     }
 }
