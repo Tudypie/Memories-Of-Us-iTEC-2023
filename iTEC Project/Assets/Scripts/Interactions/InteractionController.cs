@@ -39,19 +39,17 @@ public class InteractionController : MonoBehaviour
 
 
         if(hitSomething)
-        {   
-            OnHitSomething?.Invoke(hitInfo);  
-              
+        {           
             interactImage.SetActive(true); 
         }
         else
         {
             hitInfo = default(RaycastHit);
 
-            OnHitSomething?.Invoke(hitInfo);
-
             interactImage.SetActive(false); 
         }
+
+        OnHitSomething?.Invoke(hitInfo);
 
         Color rayColor = hitSomething ? Color.green : Color.red;
         Debug.DrawRay(ray.origin, ray.direction * rayDistance, rayColor);
