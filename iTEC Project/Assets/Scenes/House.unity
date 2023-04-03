@@ -6578,7 +6578,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '12 October 1964
 
-    
+
 
     Oh, the music! With him, I can hear it crystal
     clear! He always takes me dancing, wherever we are. His touch makes me feel like
@@ -6956,7 +6956,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8451f217b7192d84fa471d2fd0c2bd7a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.485
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7179,6 +7179,10 @@ PrefabInstance:
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Pitch
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Enabled
@@ -10489,6 +10493,42 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1101671881}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_layer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 543450652532269011}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1599507972}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_layer
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14275,18 +14315,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1756794446}
-        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
-        m_MethodName: PlayAudio
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: c0ba2bd52641db2429a42de068b4ebe3, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 605489278}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -14877,6 +14905,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4379860507155442, guid: 4691c02ac1c1da94689d7fffac3c8634, type: 3}
   m_PrefabInstance: {fileID: 1586041835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1599507972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7056722854852066714, guid: 9c3e52b70897fc54f88e59a80d977877, type: 3}
+  m_PrefabInstance: {fileID: 7867768610742466802}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1606532946
 GameObject:
@@ -15898,6 +15931,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 6539337829655209746}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &1677373193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16672,13 +16717,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: '12 July 1964
 
-    
 
-    Sunflowers...they are my favorite..He''s always
-    very aware of what I love. With him, all my problems are gone. With him, I see
-    beyond the world, and the blossoms of flowers are more intense. All my senses
-    are deeper. Before him, my world was gray. Now he is my only memory and my only
-    hope'
+
+    Sunflowers...they are my favorite..He''s always very
+    aware of what I love. With him, all my problems are gone. With him, I see beyond
+    the world, and the blossoms of flowers are more intense. All my senses are deeper.
+    Before him, my world was gray. Now he is my only memory and my only hope'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 581353d1637255b48aaa97745eec7673, type: 2}
   m_sharedMaterial: {fileID: -3906879480345346005, guid: 581353d1637255b48aaa97745eec7673, type: 2}
@@ -18765,14 +18809,14 @@ AudioReverbZone:
   m_Enabled: 1
   m_MinDistance: 200
   m_MaxDistance: 200
-  m_ReverbPreset: 1
+  m_ReverbPreset: 23
   m_Room: -1000
-  m_RoomHF: -100
+  m_RoomHF: -4000
   m_DecayTime: 1.49
-  m_DecayHFRatio: 0.83
-  m_Reflections: -2602
+  m_DecayHFRatio: 0.1
+  m_Reflections: -449
   m_ReflectionsDelay: 0.007
-  m_Reverb: 200
+  m_Reverb: 1700
   m_ReverbDelay: 0.011
   m_HFReference: 5000
   m_Diffusion: 100
@@ -19583,11 +19627,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: '21 August 1964
 
-    
 
-    I love to cook, especially if it''s with him.
-    He''s always trying to trick me, thinking I''ll mistake the order of ingredients.
-    It''s so silly! As if I can''t read or see clearly...'
+
+    I love to cook, especially if it''s with him. He''s
+    always trying to trick me, thinking I''ll mistake the order of ingredients. It''s
+    so silly! As if I can''t read or see clearly...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 581353d1637255b48aaa97745eec7673, type: 2}
   m_sharedMaterial: {fileID: -3906879480345346005, guid: 581353d1637255b48aaa97745eec7673, type: 2}
@@ -20945,6 +20989,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7684641389566895904, guid: 9c3e52b70897fc54f88e59a80d977877, type: 3}
   m_PrefabInstance: {fileID: 7867768610742466802}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &543450652532269011 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7056722854852066715, guid: 9c3e52b70897fc54f88e59a80d977877, type: 3}
+  m_PrefabInstance: {fileID: 7867768610742466802}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &543450652828454356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3253951610641619221, guid: db166132b0b1129419706d743a4c8090, type: 3}
@@ -21787,7 +21836,7 @@ PrefabInstance:
     - target: {fileID: 1998171310524237949, guid: da695233be934024a9ecfe96a11f8de5, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 873241581}
+      objectReference: {fileID: 0}
     - target: {fileID: 2031219386388443037, guid: da695233be934024a9ecfe96a11f8de5, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -23988,7 +24037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &6666261585136873616
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24736,7 +24785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7056722854852066715, guid: 9c3e52b70897fc54f88e59a80d977877, type: 3}
       propertyPath: m_Volume
-      value: 0.595
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7121965591889525818, guid: 9c3e52b70897fc54f88e59a80d977877, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25051,7 +25100,7 @@ MonoBehaviour:
     intensity: 0
     maxIntensityLabel: 
     minIntensityLabel: 
-    volumeMultiplier: 1
+    volumeMultiplier: 0.392
     sampleSubElements:
     - audioClips:
       - {fileID: 8300000, guid: 23de44348b2bbf249b67650cdfcaee77, type: 3}
@@ -25187,10 +25236,10 @@ MonoBehaviour:
   _woodCreak:
     soundName: Wood Creak
     overrideOutputMixer: {fileID: 0}
-    intensity: 0.33
+    intensity: 0.033
     maxIntensityLabel: 
     minIntensityLabel: 
-    volumeMultiplier: 0.509
+    volumeMultiplier: 0.186
     sampleSubElements:
     - audioClips:
       - {fileID: 8300000, guid: deb22987e57f5d14e85956199cf31253, type: 3}
