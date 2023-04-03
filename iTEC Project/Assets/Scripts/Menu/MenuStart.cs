@@ -13,7 +13,9 @@ public class MenuStart : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
             Application.Quit();
 
-        if(Input.GetMouseButtonDown(0))
-           OnStartGame?.Invoke();
+        if(!Input.anyKey)
+            return;
+
+        OnStartGame?.Invoke();
     }
 }

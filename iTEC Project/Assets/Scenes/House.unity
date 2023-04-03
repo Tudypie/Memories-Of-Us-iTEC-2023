@@ -849,18 +849,6 @@ MonoBehaviour:
           m_StringArgument: ImageFadeOut
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1707702934}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TextFadeOut
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1654739472}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1246,7 +1234,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5337,7 +5325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click anywhere to start game
+  m_text: Press anything to start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6670,7 +6658,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8451f217b7192d84fa471d2fd0c2bd7a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6893,10 +6881,6 @@ PrefabInstance:
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      propertyPath: m_Volume
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Enabled
@@ -13337,7 +13321,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -22720,15 +22704,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3469287838191162139, guid: 4ca88b182cc4bba4d8948f3b49e067ed, type: 3}
       propertyPath: m_Size.z
-      value: 0.46305656
+      value: 0.13688995
       objectReference: {fileID: 0}
     - target: {fileID: 3469287838191162139, guid: 4ca88b182cc4bba4d8948f3b49e067ed, type: 3}
       propertyPath: m_Center.y
-      value: 2.78929e-15
+      value: 4.890743e-16
       objectReference: {fileID: 0}
     - target: {fileID: 3469287838191162139, guid: 4ca88b182cc4bba4d8948f3b49e067ed, type: 3}
       propertyPath: m_Center.z
-      value: 0.19321825
+      value: 0.030134954
       objectReference: {fileID: 0}
     - target: {fileID: 3469287838191162139, guid: 4ca88b182cc4bba4d8948f3b49e067ed, type: 3}
       propertyPath: m_IsTrigger
@@ -24188,10 +24172,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7056722854852066715, guid: 9c3e52b70897fc54f88e59a80d977877, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7056722854852066715, guid: 9c3e52b70897fc54f88e59a80d977877, type: 3}
       propertyPath: m_Volume
       value: 0.595
       objectReference: {fileID: 0}
@@ -24652,10 +24632,10 @@ MonoBehaviour:
   _woodCreak:
     soundName: Wood Creak
     overrideOutputMixer: {fileID: 0}
-    intensity: 0.04
+    intensity: 0.33
     maxIntensityLabel: 
     minIntensityLabel: 
-    volumeMultiplier: 0.05
+    volumeMultiplier: 0.509
     sampleSubElements:
     - audioClips:
       - {fileID: 8300000, guid: deb22987e57f5d14e85956199cf31253, type: 3}
